@@ -57,6 +57,9 @@
               "sourceMap": true
             }
           },
+          "browsers": [
+            "PhantomJS"
+          ],
           "reporters": "progress",
           "logLevel": "WARN",
           "singleRun": 1,
