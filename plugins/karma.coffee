@@ -20,6 +20,7 @@ module.exports = ( warlock ) ->
       read: false
     depends: [ 'flow::scripts-to-build' ]
     tasks: [ 'webapp-build' ]
+    passive: true
 
   .add( 10, 'karma-sort-vendor', webappSpell.sortFilesByVendor( warlock, "globs.vendor.js" ), { raw: true } )
   .add( 50, 'karma.single-run', ( options, stream ) ->
