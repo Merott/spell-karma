@@ -7,7 +7,7 @@ module.exports = ( warlock ) ->
   warlock.flow 'karma-get-vendor',
     source: [
       '<%= globs.vendor.test %>'
-      '<%= globs.source.test %>'
+      '<%= globs.source.test.js %>'
     ]
     source_options:
       read: false

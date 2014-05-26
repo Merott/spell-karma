@@ -30,9 +30,22 @@
   "warlock": {
     "globs": {
       "source": {
-        "test": [
-          "<%= paths.source_app %>/**/*.spec.js"
-        ]
+        "js": [
+           "!<%= paths.source_app %>/**/*.spec.js"
+        ],
+        "coffeescript": [
+           "!<%= paths.source_app %>/**/*.spec.coffee",
+           "!<%= paths.source_app %>/**/*.spec.coffee.md",
+           "!<%= paths.source_app %>/**/*.spec.coffee.markdown"
+        ],
+        "test": {
+          "js": [
+            "<%= paths.source_app %>/**/*.spec.js"
+          ],
+          "coffeescript": [
+            "<%= paths.source_app %>/**/*.spec.coffee"
+          ]
+        }
       },
       "vendor": {
         "test": []
